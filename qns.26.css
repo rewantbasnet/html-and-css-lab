@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(194, 190, 187);
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+  div.A{
+    border: 1px solid #171515;
+  padding: 10px;
+  background-color: #f6f3f3;
+  box-shadow: 0 4px 8px rgba(31, 29, 29, 0.1);
+  border-radius: 8px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+    justify-items: center;
+    
+  }
+  
+  .gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .gallery p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(5, 5, 5);
+  }
+  

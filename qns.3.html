@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rewant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1050a5;
+      display: flex;
+      justify-content:space-evenly;
+    }
+    nav a {
+      display: inline-block;
+      padding: 24px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #110909;
+    }
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section:target {
+      display: block;
+    }
+    #gallery img {
+      width: 30%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px;
+      background-color: #9816ef;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+      }
+      #gallery img {
+        width: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Website</h1>
+  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of professionals dedicated to delivering high-quality services and solutions to our clients across various industries.</p>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Web Design and Development</li>
+      <li>Mobile App Development</li>
+      <li>Digital Marketing</li>
+    </ul>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div>
+      <img src="Man city.jpg" alt="Gallery Image 1">
+      <img src="Man. united.png" alt="Gallery Image 2">
+      <img src="Barcelona.jpg" alt="Gallery Image 3">
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>

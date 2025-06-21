@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewant</title>
+    <style>
+       *{
+            box-sizing: border-box;
+       }
+       .container{
+            position: relative;
+       }
+       .img{
+            display: block;
+            margin-left: 10rem;
+       }
+       .overlay{
+            position: absolute;
+            bottom: 0;
+            color:white;  
+            width: 100%;
+            opacity:0;
+            color: rgb(26, 14, 14);
+            font-size: 20px;
+            padding-left: 12rem;
+            padding-bottom: 35px;
+        }
+        .container:hover .overlay {
+            opacity: 5;
+        }
+        .bottom{
+            border-radius: 20px;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            background-color: rgb(33, 20, 177);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="qns.24.jpg" alt="image" class="img">
+        <div class="overlay">
+            <h1 style="font: bold;">Card Title</h1>
+            <p>This is a sample card description</p>
+            <input type="button" class="bottom" value="Read More">
+        </div>
+    </div>
+</body>
+</html>

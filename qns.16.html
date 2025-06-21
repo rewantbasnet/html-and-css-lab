@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewant</title>
+  <style>
+    body{
+      margin-top: 15px;
+      background: linear-gradient(to left, rgb(187, 110, 187), rgb(70, 14, 70));
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      height: 100px;
+	  }
+	  .navbar a, .dropdown-btn {
+      font-size: 30px;
+      color:black;
+      text-align: center;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+	  .dropdown {
+      position: relative;
+	  }
+	  .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      width: 25rem;
+    }
+	  .dropdown-menu a {
+      margin-top: 10px;
+      float: none;
+      color: black;
+      padding: 18px 25px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+	  }
+	  .dropdown:hover .dropdown-menu {
+	    display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a class="dropdown-btn">Services &#9662</a>
+        <div class="dropdown-menu" style="margin-top: 45px;">
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Content Strategy</a>
+          <a href="#">Training</a>
+        </div>
+      </div>
+      <a href="#">Portfolio &#9662</a>
+      <a href="#">About &#9662</a>
+    </div>
+  </nav>
+</body>
+</html>

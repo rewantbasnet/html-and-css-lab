@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url(qns.19.jpg) no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+      color: white;
+      text-align: center;
+    }
+    .register {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .form-box {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      text-align: left;
+    }
+
+    .form-box h2 {
+      color: #00d2ff;
+    }
+
+    input,
+    button {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      padding-right: 5px;
+    }
+    input {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    input::placeholder {
+      color: #ccc;
+    }
+    p{
+      font-size: 15px;
+    }
+    .gender,
+    .terms,
+    .remember {
+      display: flex;
+      gap: 15px;
+      margin: 10px 0;
+    }
+    .gender label,
+    .terms label,
+    .remember label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>REGISTRATION / LOGIN FORM</h1>
+    <div class="register">
+      <form class="form-box" id="register-form">
+        <h2>Register Form :</h2>
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <p>Please enter a valid email address</p>
+        <input type="password" name="password" placeholder="Password" minlength="6" required />
+        <p>Minimum of 6 characters</p>
+        <input type="password" name="confirm-password" placeholder="Confirm password" required />
+        <div class="gender">
+          <label><input type="radio" name="gender" value="female" required /> Female</label>
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+        </div>
+        <div class="terms">
+          <label><input type="checkbox" required /> I have read and accept terms of use.</label>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+      <form class="form-box" id="login-form">
+        <h2>Login form :</h2>
+        <input type="email" name="login-email" placeholder="Enter Your Email" required />
+        <input type="password" name="login-password" placeholder="Password" required />
+        <div class="remember">
+          <label><input type="checkbox"/> Remember me</label>
+        </div>
+        <button type="submit" style="margin: 25px 0;">LOGIN</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

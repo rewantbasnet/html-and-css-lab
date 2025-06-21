@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "item1"
+          "item2"
+          "item3"
+          "item4"
+          "item5";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: 100vh;
+      }
+
+      .item1 {
+        grid-area: item1;
+        background: #f66;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .item2 {
+        grid-area: item2;
+        background: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .item3 {
+        grid-area: item3;
+        background: #fc6;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .item4 {
+        grid-area: item4;
+        background: #cfc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .item5 {
+        grid-area: item5;
+        background: #6cf;
+        padding: 20px;
+        text-align: center;
+      }
+      @media (min-width: 600px) {
+      .container {
+        grid-template-areas:
+          "item1 item1"
+          "item2 item2"
+          "item3 item4"
+          "item5 item5";
+        grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 900px) {
+      .container {
+        grid-template-areas:
+          "item1 item1 item1"
+          "item3 item2 item4"
+          "item5 item5 item5";
+        grid-template-columns: 1fr 2fr 1fr;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Main</div>
+        <div class="item3">Left</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>

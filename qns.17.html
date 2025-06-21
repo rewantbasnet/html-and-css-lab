@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e5e5e5;
+        }
+        .navbar {
+            background-color: #083d64;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .nav-links {
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            display: inline-block;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 8px;
+            display: block;
+        }
+        .menu-icon {
+            display: none;
+            float: right;
+            color: white;
+            background-color: #083d64;
+            padding: 5px 8px;
+            border: 1px solid white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                width: 150px;
+                background-color: #083d64;
+                position: absolute;
+                top: 60px;
+                flex-direction: column;
+                padding-left: 0;
+            }
+            .nav-links li {
+                display: block;
+                border-top: 1px solid #ffffff33;
+            }
+            #menu-toggle:checked + .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mystery Code</div>
+        <label for="menu-toggle" class="menu-icon">Menu</label>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin:0.5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+fieldset{
+    width: 50%;
+    border-color: rgb(86, 79, 79);
+}
+h4{
+    color:red;
+    
+}
+.outer-box{
+    border: 2px solid rgb(118, 99, 99);
+    margin: 10px;
+}
+.name input,.address input,.phone input,.country select,.message textarea{
+    width: 80%;
+    border-color: orange;
+}
+legend{
+    text-align: center;
+}
+#a{
+    background-color:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#b{
+    background-color: rgb(201, 46, 46);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.U{
+    display: inline-block;
+    width: 5rem;
+}
